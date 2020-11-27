@@ -48,3 +48,7 @@ rake spec
 * Instructions have a clear step by step
 
 * repo exists on github
+
+
+## Instructions
+
