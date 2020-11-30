@@ -95,3 +95,4 @@ sudo ln -s /etc/nginx/sites-available/proxy_config.conf /etc/nginx/sites-enabled
 sudo systemctl restart nginx.service
 ```
 
+[For more on setting up and running vagrant](https://github.com/ldaijiw/task_dev_env_app)
