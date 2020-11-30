@@ -25,6 +25,7 @@ describe('Homepage', function() {
   });
 });
 
+/*
 describe('Blog', function() {
   it('should display the list of posts at /posts GET', function(done) {
     chai.request(server)
@@ -35,7 +36,7 @@ describe('Blog', function() {
       });
   });
 });
-
+*/
 describe('Fibonacci', function() {
   it('should display the correct fibonacci value at /fibonacci/10 GET', function(done) {
     chai.request(server)

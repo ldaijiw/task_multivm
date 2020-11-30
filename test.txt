@@ -5,3 +5,4 @@ test one more time
 testing npm test
 changed dir to /app
 testing ls -a
+testing npm install
