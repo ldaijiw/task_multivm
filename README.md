@@ -33,17 +33,11 @@ rake spec
 ## Acceptance Criteria
 
 * Uses vagrant file
-* Create 2 VM APP and Mongod
-* Localhost set to development.local
+* Localhost set to development.local (unless you computer can't handle this)
+* port 80 has App running (you see the sparta logo on development.local)
+* Work with only command "vagrant up" &/or mininum commands 
 
-* App works on Port 3000 (development.local:3000)
-
-* Work with only command "vagrant up" &/or mininum commands
-* All tests passing
-* works on /posts
-* works on /fibonacci/30
-
-* Documentation exists as README.md file
+* Documentation exists as README.md file 
 * Documentation includes: Intro (purpose of repo), Pre Requisits  and Intructions
 * Instructions have a clear step by step
 
