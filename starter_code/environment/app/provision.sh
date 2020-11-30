@@ -31,9 +31,10 @@ sudo cp /home/ubuntu/nginx_config/proxy_config.conf /etc/nginx/sites-available/p
 # link the new proxy 
 sudo ln -s /etc/nginx/sites-available/proxy_config.conf /etc/nginx/sites-enabled/proxy_config.conf
 
-sudo systemctl restart nginx.service
 
 # finally, restart the nginx service so the new config takes hold
+
+sudo service nginx restart
 
 cd /home/ubuntu/app
 

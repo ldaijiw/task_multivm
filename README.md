@@ -75,7 +75,7 @@ The nginx configuration to configure the port to 80 is as follows
 server {
 	listen 80;
 	location / {
-	proxy_pass 192.168.10.100:3000;
+	proxy_pass https://192.168.10.100:3000;
 	}
 }
 ```
