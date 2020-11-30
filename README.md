@@ -65,3 +65,33 @@ Instead of running the app on port 80 (this would involve giving the app more pr
 - Instead of a _forward proxy_ which is an intermediary for its associated clients to contact any server, a _reverse proxy_ is an intermediary for its associated servers to be contacted by any client
 
 **A proxy is associated with the client, a reverse proxy is associated with the server**
+
+### Nginx Configuration
+
+The nginx configuration to configure the port to 80 is as follows
+
+``proxy_conf.conf``
+```
+server {
+	listen 80;
+	location / {
+	proxy_pass 192.168.10.100:3000;
+	}
+}
+```
+
+With the following added instructions in the ``provision.sh`` file to relink the new configuration
+
+```bash
+# unlink default config file
+sudo unlink /etc/nginx/sites-enabled/default
+
+# move custom config file to correct dir
+sudo cp /home/ubuntu/nginx_config/proxy_config.conf /etc/nginx/sites-available/proxy_config.conf
+
+# link the new proxy 
+sudo ln -s /etc/nginx/sites-available/proxy_config.conf /etc/nginx/sites-enabled/proxy_config.conf
+
+sudo systemctl restart nginx.service
+```
+

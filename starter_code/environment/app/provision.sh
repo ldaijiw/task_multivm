@@ -26,7 +26,7 @@ sudo apt-get install nginx -y
 sudo unlink /etc/nginx/sites-enabled/default
 
 # move custom config file to correct dir
-sudo mv /home/ubuntu/nginx_config/proxy_config.conf /etc/nginx/sites-available/
+sudo cp /home/ubuntu/nginx_config/proxy_config.conf /etc/nginx/sites-available/proxy_config.conf
 
 # link the new proxy 
 sudo ln -s /etc/nginx/sites-available/proxy_config.conf /etc/nginx/sites-enabled/proxy_config.conf
