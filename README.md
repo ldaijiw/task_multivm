@@ -52,6 +52,9 @@ rake spec
 
 ## Instructions
 
+[For more on setting up and running vagrant](https://github.com/ldaijiw/task_dev_env_app)
+
+
 The original configuration of the app is set to run on port 3000. However, browsers use port 80 by default when loading web applications
 
 Instead of running the app on port 80 (this would involve giving the app more privileges which could be potentially dangerous), set up a reverse proxy using nginx
@@ -94,5 +97,3 @@ sudo ln -s /etc/nginx/sites-available/proxy_config.conf /etc/nginx/sites-enabled
 
 sudo systemctl restart nginx.service
 ```
-
-[For more on setting up and running vagrant](https://github.com/ldaijiw/task_dev_env_app)
