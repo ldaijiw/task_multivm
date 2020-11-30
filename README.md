@@ -52,3 +52,16 @@ rake spec
 
 ## Instructions
 
+The original configuration of the app is set to run on port 3000. However, browsers use port 80 by default when loading web applications
+
+Instead of running the app on port 80 (this would involve giving the app more privileges which could be potentially dangerous), set up a reverse proxy using nginx
+
+### Reverse Proxy
+
+**A proxy server is a server application or appliance that acts as an intermediary for requests from clients sekking resources from servers that provide those resources**
+- Proxy server functions on behalf of the client when requesting a service, potentially masking the true origin of the request to the server
+- A reverse proxy is a type of proxy server that retrieves resources on behalf of a client from one or more servers
+	- The resources are then returned to the client, appearing as if they originated from the reverse proxy server itself
+- Instead of a _forward proxy_ which is an intermediary for its associated clients to contact any server, a _reverse proxy_ is an intermediary for its associated servers to be contacted by any client
+
+**A proxy is associated with the client, a reverse proxy is associated with the server**

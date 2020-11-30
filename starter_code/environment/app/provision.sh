@@ -22,11 +22,21 @@ sudo npm install pm2 -g
 
 sudo apt-get install nginx -y
 
+# unlink default config file
+sudo unlink /etc/nginx/sites-enabled/default
+
+# move custom config file to correct dir
+sudo mv /home/ubuntu/nginx_config/proxy_config.conf /etc/nginx/sites-available/
+
+# link the new proxy 
+sudo ln -s /etc/nginx/sites-available/proxy_config.conf /etc/nginx/sites-enabled/proxy_config.conf
+
+sudo systemctl restart nginx.service
+
 # finally, restart the nginx service so the new config takes hold
-sudo service nginx restart
 
 cd /home/ubuntu/app
 
 sudo npm install
 
-pm2 start app
+pm2 start app.js --update-env
