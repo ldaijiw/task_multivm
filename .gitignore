@@ -1,1 +1,3 @@
-starter_code/app/node_modules*
+starter_code/app/node_modules
+.vagrant
+*.log

@@ -4,7 +4,7 @@
 sudo apt-get update -y
 
 # upgrade any packages available
-sudo apt-get upgrade -y
+# sudo apt-get upgrade -y
 
 # set environment variable for DB_HOST
 echo "export DB_HOST=192.168.10.200" >> ~/.bashrc
