@@ -34,7 +34,7 @@ sudo ln -s /etc/nginx/sites-available/proxy_config.conf /etc/nginx/sites-enabled
 
 # finally, restart the nginx service so the new config takes hold
 
-sudo service nginx restart
+sudo systemctl restart nginx.service
 
 cd /home/ubuntu/app
 
